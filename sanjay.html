@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>registration from</title>
+<script>
+function getvalues()
+{
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var num=document.getElementById("num").value;
+localstorage.setItem("name",name);
+localstorage.setItem("email",email);
+localstorage.setItem("num",num);
+returns;
+}
+</script>
+</head>
+<body>
+<h1>Registration form</h1>
+<form action="form.html">
+Name <input type="textbox" id="name"><br></br>
+E-mail <input type="textbox" id="email"><br></br>
+number <input type="textbox" id="number"><br></br>
+<input type="submit"value="submit"onclick="getvalues()">
+</form>
+</body>
+</html>
+
+
+
+
